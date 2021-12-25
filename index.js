@@ -25,13 +25,12 @@ const level = require('level')
 const ttl = require('level-ttl')
 
 const db = ttl(level('./db', {valueEncoding: 'binary'}))
+app.use(cors())
 
 if (!isProduction()) {
   logger.add(new winston.transports.Console({
     format: winston.format.simple(),
   }))
-
-  app.use(cors())
 } else {
   app.use(express.static('build'))
   app.use('/static', express.static('build'))
