@@ -91,5 +91,9 @@ app.use(function (request, response, next) {
 })
 
 app.listen(port, () => {
-  logger.info(`The service is listening at http://localhost:${port}`)
+  if (!isProduction()) {
+    logger.info(`The service is listening at http://localhost:${port}`)
+  } else {
+    logger.info(`The service is up and running`)
+  }
 })
