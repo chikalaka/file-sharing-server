@@ -149,3 +149,7 @@
 {"level":"info","message":"The service is listening at http://localhost:9000"}
 {"fileName":"arrow.png","fileSize":2203,"level":"info","message":"File meta data:","ttl":600000}
 {"level":"info","message":"arrow.png inserted to db successfully"}
+{"level":"info","message":"The service is listening at http://localhost:9000"}
+{"level":"info","message":"The service is listening at http://localhost:9000"}
+{"fileName":"download.jpeg","fileSize":7066,"level":"info","message":"File meta data:","ttl":88000}
+{"level":"info","message":"download.jpeg inserted to db successfully"}
